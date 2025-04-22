@@ -86,11 +86,8 @@ We welcome contributions to this project! To contribute:
 3. Commit your changes with clear and descriptive messages.
 4. Create a pull request with a detailed description of your changes.
 
-## License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
-
 ## Contact
 For any questions, feedback, or contributions, please contact:
 
-**Your Name or GitHub Username**  
-Email: **Your Email Address**
+**Nancy Dwivedi**  
+Email: **nancydwivedi1234@gmail.com**
