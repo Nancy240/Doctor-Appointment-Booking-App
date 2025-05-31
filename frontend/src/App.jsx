@@ -13,7 +13,17 @@ import Footer from './components/Footer.jsx'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify.jsx'
-import reportWebVitals from './reportWebVitals.js';
+import Layout from './components/health_dashboard/Layout.jsx'
+import Dashboard from './pages/Dashboard.jsx'
+import Steps from './pages/Steps.jsx'
+import HeartRate from './pages/HeartRate.jsx'
+import Calories from './pages/Calories.jsx'
+import Weight from './pages/WeightPage.jsx'
+import FitnessDashboard from './pages/Fitdashboard.jsx'
+
+
+
+
 
 const App = () => {
   return (
@@ -31,7 +41,20 @@ const App = () => {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/my-profile' element={<MyProfile />} />
         <Route path='/verify' element={<Verify />} />
-        <Route path='/reportWebVitals' element={<reportWebVitals />} />
+        
+        {/* Health Dashboard Routes */}
+        <Route path='/dashboard' element={<Layout/>}>
+          <Route index element={<Dashboard/>} />
+          <Route path="steps" element={<Steps/>} />
+          <Route path="heart-rate" element={<HeartRate />} />
+          <Route path="calories" element={<Calories />} />
+          
+          <Route path="weight" element={<Weight />} />
+          
+        </Route>
+
+        <Route path="/health-dashboard" element={<FitnessDashboard/>}/>
+
       </Routes>
       <Footer />
     </div>

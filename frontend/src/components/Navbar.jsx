@@ -36,6 +36,11 @@ const Navbar = () => {
           <li className='py-1'>CONTACT</li>
           <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
+
+        <NavLink to='/health-dashboard' >
+          <li className='py-1'>MY DASHBOARD</li>
+          <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
+        </NavLink>
       </ul>
 
       <div className='flex items-center gap-4 '>
