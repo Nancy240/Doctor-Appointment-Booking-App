@@ -51,6 +51,7 @@ app.get('/auth-url', (req, res) => {
     scope: SCOPES,
     prompt: 'consent'
   });
+  
   res.json({ url });
 });
 
