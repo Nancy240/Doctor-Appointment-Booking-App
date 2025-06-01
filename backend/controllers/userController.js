@@ -10,6 +10,10 @@ import stripe from "stripe";
 import razorpay from 'razorpay';
 import { OAuth2Client } from 'google-auth-library';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
+
 // Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY)
 const razorpayInstance = new razorpay({
